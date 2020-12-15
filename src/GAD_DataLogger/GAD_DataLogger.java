@@ -55,7 +55,7 @@ public class GAD_DataLogger {
     class Logger {
         public void Log(String incomingData) throws IOException {
             Date currentDate = new Date();
-            File DataLog = new File("GAD_Labb_2_Git\\src\\DataLogFiles\\TempDataLog.txt");
+            File DataLog = new File("src/DataLogFiles/TempDataLog.txt");
             FileWriter fw = new FileWriter(DataLog, true);
             if (incomingData.startsWith("C")){
                 fw.write(currentDate + ": " + incomingData + "\n" + "-------------------------------------" + "\n");
